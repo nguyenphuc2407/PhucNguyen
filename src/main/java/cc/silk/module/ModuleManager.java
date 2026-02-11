@@ -56,21 +56,23 @@ public final class ModuleManager {
     private void addModules() {
         // Combat
         add(
-                new TriggerBot(),
-                new HitCob(), new StunCob(),
-                new AutoCart(), new CrystalOptimizer(), new XbowCart());
+                new TriggerBot(), 
+                new ShieldBreaker(), 
+                new KeyLava(), new AutoPot(), new StunCob(),
+                new AutoCart(), new HitCob(), new XbowCart());
         // Movement
         add(new Sprint(), new AutoFirework(), new AutoHeadHitter(), new KeepSprint(), new SnapTap());
 
         // Player
         add(
-                new AutoRefill(),
-                new AutoDrain(), new FastPlace(), new FastEXP(),
-                new TrapSave(), new PingSpoof(), new AutoDoubleHand());
+                new AutoExtinguish(), new AutoTool(), new AutoWeb(), new AutoRefill(),
+                new AutoDrain(), new AutoCrafter(), new FastPlace(), new FastEXP(),
+                new TrapSave(), new PingSpoof(), new AutoDoubleHand(),
+                new AutoMLG(), new FastMine(), new ReBuffNotifier(), new CoverUp());
 
         // Render
         add(
-                new TargetHUD(),
+                new ContainerSlots(), new FullBright(), new Watermark(), new TargetHUD(),
                 new SwingSpeed(),
                 new Notifications(), new ArrowESP(), new OutlineESP(), new CustomOutlineESP(), new ESP2D(), new ESP3D(), new TargetESP(),
                 new ArrayList(), new Trajectories(), new BlurTest(), new AspectRatio(), new Nametags());
